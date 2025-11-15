@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- SEO Meta Tags -->
+    <title>Dashboard - CoinSight</title>
+    <meta name="description" content="Monitor your cryptocurrency portfolio in real-time.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <nav id="main-navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.jpg" alt="CoinSight logo" width="40" height="40" style="border-radius: 8px;">
+                <span>CoinSight</span>
+            </a>
+            
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="markets.html">Markets</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="learn.html">Learn</a>
+                <a href="tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Dashboard</h1>
+                <p class="page-intro">Welcome back! Here's a snapshot of your portfolio and the market.</p>
+            </div>
+        </section>
+
+        <section class="dashboard-grid-container container">
+            <!-- Portfolio Overview Panel -->
+            <div class="portfolio-overview-panel">
+                <article class="overview-card">
+                    <span class="overview-title">Total Balance</span>
+                    <span class="overview-value">$12,450.82</span>
+                </article>
+                <article class="overview-card">
+                    <span class="overview-title">24h Volume</span>
+                    <span class="overview-value">$1,830.40</span>
+                </article>
+                <article class="overview-card">
+                    <span class="overview-title">Total P&L</span>
+                    <span class="overview-value text-positive">+$782.15</span>
+                </article>
+                <article class="overview-card">
+                    <span class="overview-title">Open Positions</span>
+                    <span class="overview-value">4</span>
+                </article>
+            </div>
+
+            <!-- Crypto Summary Cards -->
+            <div class="crypto-summary-cards">
+                <article class="card">
+                    <div class="summary-header">
+                        <span class="coin-sign">₿</span>
+                        <span>Bitcoin <span class="ticker">BTC</span></span>
+                    </div>
+                    <div class="summary-price">$68,450.72</div>
+                    <div class="summary-change text-positive">+2.5%</div>
+                </article>
+                <article class="card">
+                    <div class="summary-header">
+                        <span class="coin-sign">💎</span>
+                        <span>Ethereum <span class="ticker">ETH</span></span>
+                    </div>
+                    <div class="summary-price">$3,560.18</div>
+                    <div class="summary-change text-negative">-1.2%</div>
+                </article>
+                <article class="card">
+                    <div class="summary-header">
+                        <span class="coin-sign">☀️</span>
+                        <span>Solana <span class="ticker">SOL</span></span>
+                    </div>
+                    <div class="summary-price">$152.45</div>
+                    <div class="summary-change text-positive">+5.8%</div>
+                </article>
+                <article class="card">
+                    <div class="summary-header">
+                        <span class="coin-sign">💵</span>
+                        <span>Tether <span class="ticker">USDT</span></span>
+                    </div>
+                    <div class="summary-price">$1.00</div>
+                    <div class="summary-change">+0.01%</div>
+                </article>
+            </div>
+
+            <!-- Quick Actions Section -->
+            <div class="quick-actions-section">
+                <div class="quick-actions-header">
+                    <h3>Quick Actions</h3>
+                </div>
+                <a href="#" class="action-btn">
+                    <span>Deposit</span>
+                </a>
+                <a href="#" class="action-btn">
+                    <span>Withdraw</span>
+                </a>
+                <a href="#" class="action-btn">
+                    <span>Swap</span>
+                </a>
+            </div>
+
+            <!-- Market Overview Table -->
+            <article class="market-overview-table">
+                <h2>Market Overview</h2>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Asset</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">24h Change</th>
+                                <th scope="col">Market Cap</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="asset-cell">
+                                        <span class="coin-sign">₿</span>
+                                        <span>Bitcoin <span class="ticker">BTC</span></span>
+                                    </div>
+                                </td>
+                                <td>$68,450.72</td>
+                                <td class="text-positive">+2.5%</td>
+                                <td>$1.3T</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="asset-cell">
+                                        <span class="coin-sign">💎</span>
+                                        <span>Ethereum <span class="ticker">ETH</span></span>
+                                    </div>
+                                </td>
+                                <td>$3,560.18</td>
+                                <td class="text-negative">-1.2%</td>
+                                <td>$427.5B</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="asset-cell">
+                                        <span class="coin-sign">☀️</span>
+                                        <span>Solana <span class="ticker">SOL</span></span>
+                                    </div>
+                                </td>
+                                <td>$152.45</td>
+                                <td class="text-positive">+5.8%</td>
+                                <td>$70.1B</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="asset-cell">
+                                        <span class="coin-sign">🔶</span>
+                                        <span>BNB <span class="ticker">BNB</span></span>
+                                    </div>
+                                </td>
+                                <td>$588.60</td>
+                                <td class="text-positive">+0.9%</td>
+                                <td>$86.9B</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="navbar-logo" aria-label="CoinSight Home">
+                    <img src="images/logo.jpg" alt="CoinSight logo" width="40" height="40" style="border-radius: 8px;">
+                </a>
+                <div class="footer-social">
+                    <a href="https://twitter.com/coinsight" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://linkedin.com/company/coinsight" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <nav class="footer-sitemap">
+                <div class="sitemap-column">
+                    <h4>Products</h4>
+                    <a href="#">Pro Trade</a>
+                    <a href="#">Portfolio Tracker</a>
+                </div>
+                <div class="sitemap-column">
+                    <h4>Buy Crypto</h4>
+                    <a href="#">Buy Bitcoin</a>
+                    <a href="#">Buy Ethereum</a>
+                </div>
+                <div class="sitemap-column">
+                    <h4>INR Conversion</h4>
+                    <a href="#">USD to INR</a>
+                    <a href="#">EUR to INR</a>
+                </div>
+                <div class="sitemap-column">
+                    <h4>Policies</h4>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="sitemap-column">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                </div>
+            </nav>
+            <p class="footer-copyright">&copy; 2025 CoinSight. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- SEO Meta Tags -->
+    <title>Financial Tools - CoinSight</title>
+    <meta name="description" content="Use our financial tools like the budget calculator to manage your finances effectively.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <nav id="main-navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.jpg" alt="CoinSight logo" width="40" height="40" style="border-radius: 8px;">
+                <span>CoinSight</span>
+            </a>
+            
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="markets.html">Markets</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="learn.html">Learn</a>
+                <a href="tools.html" class="active">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Financial Tools</h1>
+                <p class="page-intro">Smart calculators to help you plan your finances and make informed decisions.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="text-center">Budget Calculator</h2>
+                <p class="text-center section-subheading">Enter your monthly income and expenses to see a breakdown of your budget. This tool will help you understand where your money is going.</p>
+                
+                <div class="grid-2-col" style="max-width: 900px; margin-inline: auto; align-items: start;">
+                    <form class="card form">
+                        <div class="form-group">
+                            <label for="monthly-income">Monthly Income</label>
+                            <input type="number" id="monthly-income" class="form-input" placeholder="e.g., 5000">
+                        </div>
+                        <div class="form-group">
+                            <label for="housing">Housing</label>
+                            <input type="number" id="housing" class="form-input" placeholder="e.g., 1500">
+                        </div>
+                        <div class="form-group">
+                            <label for="transportation">Transportation</label>
+                            <input type="number" id="transportation" class="form-input" placeholder="e.g., 300">
+                        </div>
+                        <div class="form-group">
+                            <label for="food">Food</label>
+                            <input type="number" id="food" class="form-input" placeholder="e.g., 600">
+                        </div>
+                        <div class="form-group">
+                            <label for="utilities">Utilities</label>
+                            <input type="number" id="utilities" class="form-input" placeholder="e.g., 200">
+                        </div>
+                        <div class="form-group">
+                            <label for="other">Other</label>
+                            <input type="number" id="other" class="form-input" placeholder="e.g., 400">
+                        </div>
+                        <button type="submit" class="btn-primary">Calculate</button>
+                    </form>
+
+                    <div class="card">
+                        <h3>Results</h3>
+                        <div class="market-card-stats" style="display: block;">
+                            <div style="display: flex; justify-content: space-between; padding-block: 0.5rem;"><span>Total Expenses:</span><strong>$0.00</strong></div>
+                            <div style="display: flex; justify-content: space-between; padding-block: 0.5rem;"><span>Remaining Balance:</span><strong>$0.00</strong></div>
+                        </div>
+                        <p class="card-subtext" style="margin-top: 1rem;">Your results will be displayed here once you calculate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="navbar-logo" aria-label="CoinSight Home">
+                    <img src="images/logo.jpg" alt="CoinSight logo" width="40" height="40" style="border-radius: 8px;">
+                </a>
+                <div class="footer-social">
+                    <a href="https://twitter.com/coinsight" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://linkedin.com/company/coinsight" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <p class="footer-copyright" style="margin-top: 2rem;">&copy; 2025 CoinSight. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- SEO Meta Tags -->
+    <title>Crypto Markets - CoinSight</title>
+    <meta name="description" content="View live cryptocurrency prices, market caps, and 24h trading volumes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <nav id="main-navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.jpg" alt="CoinSight logo" width="40" height="40" style="border-radius: 8px;">
+                <span>CoinSight</span>
+            </a>
+            
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="markets.html" class="active">Markets</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="learn.html">Learn</a>
+                <a href="tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Live Market Data</h1>
+                <p class="page-intro">Explore the top cryptocurrencies with real-time data and insights.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="visually-hidden">Top Cryptocurrency Markets</h2>
+                <div class="grid-4-col">
+                    <article class="market-card">
+                        <div class="market-card-header">
+                            <div class="market-card-name">
+                                <h3>Bitcoin</h3>
+                                <span class="ticker">BTC</span>
+                            </div>
+                        </div>
+                        <div class="market-card-price">$68,450.72</div>
+                        <div class="market-card-chart">
+                            <svg class="sparkline-svg positive-chart" viewBox="0 0 100 30">
+                                <path class="sparkline-path" d="M 0 25 L 10 20 L 20 22 L 30 15 L 40 18 L 50 12 L 60 15 L 70 10 L 80 14 L 90 8 L 100 10" />
+                            </svg>
+                            <span class="text-positive">+2.5%</span>
+                        </div>
+                        <div class="market-card-stats">
+                            <div><span>Market Cap</span><strong>$1.3T</strong></div>
+                            <div><span>Volume (24h)</span><strong>$45.2B</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="market-card">
+                        <div class="market-card-header">
+                            <div class="market-card-name">
+                                <h3>Ethereum</h3>
+                                <span class="ticker">ETH</span>
+                            </div>
+                        </div>
+                        <div class="market-card-price">$3,560.18</div>
+                        <div class="market-card-chart">
+                            <svg class="sparkline-svg negative-chart" viewBox="0 0 100 30">
+                                <path class="sparkline-path" d="M 0 10 L 10 15 L 20 12 L 30 18 L 40 16 L 50 22 L 60 20 L 70 25 L 80 22 L 90 28 L 100 25" />
+                            </svg>
+                            <span class="text-negative">-1.2%</span>
+                        </div>
+                        <div class="market-card-stats">
+                            <div><span>Market Cap</span><strong>$427.5B</strong></div>
+                            <div><span>Volume (24h)</span><strong>$22.1B</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="market-card">
+                        <div class="market-card-header">
+                            <div class="market-card-name">
+                                <h3>Solana</h3>
+                                <span class="ticker">SOL</span>
+                            </div>
+                        </div>
+                        <div class="market-card-price">$152.45</div>
+                        <div class="market-card-chart">
+                            <svg class="sparkline-svg positive-chart" viewBox="0 0 100 30">
+                                <path class="sparkline-path" d="M 0 28 L 10 22 L 20 24 L 30 18 L 40 20 L 50 15 L 60 18 L 70 12 L 80 15 L 90 10 L 100 5" />
+                            </svg>
+                            <span class="text-positive">+5.8%</span>
+                        </div>
+                        <div class="market-card-stats">
+                            <div><span>Market Cap</span><strong>$70.1B</strong></div>
+                            <div><span>Volume (24h)</span><strong>$3.5B</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="market-card">
+                        <div class="market-card-header">
+                            <div class="market-card-name">
+                                <h3>BNB</h3>
+                                <span class="ticker">BNB</span>
+                            </div>
+                        </div>
+                        <div class="market-card-price">$588.60</div>
+                        <div class="market-card-chart">
+                            <svg class="sparkline-svg positive-chart" viewBox="0 0 100 30">
+                                <path class="sparkline-path" d="M 0 20 L 10 18 L 20 22 L 30 19 L 40 15 L 50 18 L 60 14 L 70 16 L 80 12 L 90 14 L 100 10" />
+                            </svg>
+                            <span class="text-positive">+0.9%</span>
+                        </div>
+                        <div class="market-card-stats">
+                            <div><span>Market Cap</span><strong>$86.9B</strong></div>
+                            <div><span>Volume (24h)</span><strong>$2.1B</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="market-card">
+                        <div class="market-card-header">
+                            <div class="market-card-name">
+                                <h3>XRP</h3>
+                                <span class="ticker">XRP</span>
+                            </div>
+                        </div>
+                        <div class="market-card-price">$0.52</div>
+                        <div class="market-card-chart">
+                            <svg class="sparkline-svg negative-chart" viewBox="0 0 100 30">
+                                <path class="sparkline-path" d="M 0 8 L 10 12 L 20 10 L 30 15 L 40 18 L 50 22 L 60 20 L 70 24 L 80 28 L 90 26 L 100 29" />
+                            </svg>
+                            <span class="text-negative">-2.1%</span>
+                        </div>
+                        <div class="market-card-stats">
+                            <div><span>Market Cap</span><strong>$28.9B</strong></div>
+                            <div><span>Volume (24h)</span><strong>$1.1B</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="market-card">
+                        <div class="market-card-header">
+                            <div class="market-card-name">
+                                <h3>Cardano</h3>
+                                <span class="ticker">ADA</span>
+                            </div>
+                        </div>
+                        <div class="market-card-price">$0.45</div>
+                        <div class="market-card-chart">
+                            <svg class="sparkline-svg negative-chart" viewBox="0 0 100 30">
+                                <path class="sparkline-path" d="M 0 15 L 10 18 L 20 16 L 30 20 L 40 22 L 50 18 L 60 24 L 70 22 L 80 25 L 90 28 L 100 26" />
+                            </svg>
+                            <span class="text-negative">-3.4%</span>
+                        </div>
+                        <div class="market-card-stats">
+                            <div><span>Market Cap</span><strong>$16.2B</strong></div>
+                            <div><span>Volume (24h)</span><strong>$350M</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="market-card">
+                        <div class="market-card-header">
+                            <div class="market-card-name">
+                                <h3>Dogecoin</h3>
+                                <span class="ticker">DOGE</span>
+                            </div>
+                        </div>
+                        <div class="market-card-price">$0.15</div>
+                        <div class="market-card-chart">
+                            <svg class="sparkline-svg positive-chart" viewBox="0 0 100 30">
+                                <path class="sparkline-path" d="M 0 18 L 10 15 L 20 19 L 30 14 L 40 16 L 50 12 L 60 15 L 70 10 L 80 14 L 90 8 L 100 10" />
+                            </svg>
+                            <span class="text-positive">+1.5%</span>
+                        </div>
+                        <div class="market-card-stats">
+                            <div><span>Market Cap</span><strong>$21.7B</strong></div>
+                            <div><span>Volume (24h)</span><strong>$890M</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="market-card">
+                        <div class="market-card-header">
+                            <div class="market-card-name">
+                                <h3>Polkadot</h3>
+                                <span class="ticker">DOT</span>
+                            </div>
+                        </div>
+                        <div class="market-card-price">$7.20</div>
+                        <div class="market-card-chart">
+                            <svg class="sparkline-svg negative-chart" viewBox="0 0 100 30">
+                                <path class="sparkline-path" d="M 0 10 L 10 15 L 20 12 L 30 18 L 40 16 L 50 22 L 60 20 L 70 25 L 80 22 L 90 28 L 100 25" />
+                            </svg>
+                            <span class="text-negative">-0.5%</span>
+                        </div>
+                        <div class="market-card-stats">
+                            <div><span>Market Cap</span><strong>$10.1B</strong></div>
+                            <div><span>Volume (24h)</span><strong>$250M</strong></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-trade-section">
+            <div class="container">
+                <h2>Why Trade With Us?</h2>
+                <div class="grid-4-col">
+                    <article class="card text-center">
+                        <h3>Deep Liquidity</h3>
+                        <p class="card-subtext">Access billions in daily trading volume</p>
+                    </article>
+                    <article class="card text-center">
+                        <h3>Global Network</h3>
+                        <p class="card-subtext">Available in 150+ countries worldwide</p>
+                    </article>
+                    <article class="card text-center">
+                        <h3>Expert Team</h3>
+                        <p class="card-subtext">Industry veterans with decades of experience</p>
+                    </article>
+                    <article class="card text-center">
+                        <h3>Full-Stack Support</h3>
+                        <p class="card-subtext">24/7 customer service in multiple languages</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-lightest">
+            <div class="container">
+                <h2>Our Portfolio Companies</h2>
+                <p class="text-center section-subheading">Strategic investments in the future of blockchain technology</p>
+                <div class="grid-4-col">
+                    <article class="card text-center">
+                        <h3>AirStack</h3>
+                        <p class="card-subtext">AI-powered analytics platform</p>
+                    </article>
+                    <article class="card text-center">
+                        <h3>BSX</h3>
+                        <p class="card-subtext">Decentralized derivatives exchange</p>
+                    </article>
+                    <article class="card text-center">
+                        <h3>Mantis Swap</h3>
+                        <p class="card-subtext">Cross-chain liquidity protocol</p>
+                    </article>
+                    <article class="card text-center">
+                        <h3>CyberGuard</h3>
+                        <p class="card-subtext">On-chain security solutions</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Market News</h2>
+                <div class="grid-3-col">
+                    <article class="card news-card">
+                        <h3>The Rise of RWA Tokenization</h3>
+                        <p class="news-date">28 February 2025</p>
+                        <p class="card-subtext">Real-world assets are entering the blockchain era, opening new investment opportunities.</p>
+                    </article>
+                    <article class="card news-card">
+                        <h3>Ethereum's Dencun Upgrade</h3>
+                        <p class="news-date">25 February 2025</p>
+                        <p class="card-subtext">Major network upgrade brings significant improvements to scalability and fees.</p>
+                    </article>
+                    <article class="card news-card">
+                        <h3>Navigating the Bull Market</h3>
+                        <p class="news-date">22 February 2025</p>
+                        <p class="card-subtext">Expert strategies for maximizing gains while managing risk in volatile markets.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="navbar-logo" aria-label="CoinSight Home">
+                    <img src="images/logo.jpg" alt="CoinSight logo" width="40" height="40" style="border-radius: 8px;">
+                </a>
+                <div class="footer-social">
+                    <a href="https://twitter.com/coinsight" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://linkedin.com/company/coinsight" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <nav class="footer-sitemap">
+                <div class="sitemap-column">
+                    <h4>Products</h4>
+                    <a href="#">Pro Trade</a>
+                    <a href="#">Portfolio Tracker</a>
+                </div>
+                <div class="sitemap-column">
+                    <h4>Buy Crypto</h4>
+                    <a href="#">Buy Bitcoin</a>
+                    <a href="#">Buy Ethereum</a>
+                </div>
+                <div class="sitemap-column">
+                    <h4>INR Conversion</h4>
+                    <a href="#">USD to INR</a>
+                    <a href="#">EUR to INR</a>
+                </div>
+                <div class="sitemap-column">
+                    <h4>Policies</h4>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="sitemap-column">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                </div>
+            </nav>
+            <p class="footer-copyright">&copy; 2025 CoinSight. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
