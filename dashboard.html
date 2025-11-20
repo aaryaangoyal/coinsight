@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    
-    <!-- SEO Meta Tags -->
     <title>Dashboard - CoinSight</title>
     <meta name="description" content="Monitor your cryptocurrency portfolio in real-time.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-    
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
-    <nav id="main-navbar"> 
+    <nav id="main-navbar">
         <div class="container">
             <a href="index.html" class="navbar-logo">
                 <img src="images/1.jpg" alt="CoinSight logo" width="40" height="40" style="border-radius: 8px;">
@@ -31,7 +24,7 @@
             
             <div class="navbar-links">
                 <a href="index.html">Home</a>
-                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="dashboard.html" class="active" aria-current="page">Dashboard</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="markets.html">Markets</a>
@@ -50,99 +43,68 @@
             </div>
         </section>
 
-        <section class="dashboard-grid-container container">
-            <!-- Portfolio Overview Panel -->
-            <div class="portfolio-overview-panel">
-                <article class="overview-card">
-                    <span class="overview-title">Total Balance</span> 
-                    <span class="overview-value">$12,450.82</span>
-                </article>
-                <article class="overview-card">
-                    <span class="overview-title">24h Volume</span> 
-                    <span class="overview-value">$1,830.40</span>
-                </article>
-                <article class="overview-card">
-                    <span class="overview-title">Total P&L</span> 
-                    <span class="overview-value text-positive">+$782.15</span>
-                </article>
-                <article class="overview-card">
-                    <span class="overview-title">Open Positions</span> 
-                    <span class="overview-value">4</span>
-                </article>
-            </div>
+        <div class="container">
+            <section class="dashboard-grid">
 
-            <!-- Crypto Summary Cards -->
-            <div class="crypto-summary-cards">
-                <article class="card">
-                    <div class="summary-header">
-                        <span class="coin-sign">₿</span> 
-                        <span>Bitcoin <span class="ticker">BTC</span></span>
-                    </div>
-                    <div class="summary-price">$68,450.72</div>
-                    <div class="summary-change text-positive">+2.5%</div>
-                </article>
-                <article class="card">
-                    <div class="summary-header"> 
-                        <span class="coin-sign">💎</span>
-                        <span>Ethereum <span class="ticker">ETH</span></span>
-                    </div>
-                    <div class="summary-price">$3,560.18</div>
-                    <div class="summary-change text-negative">-1.2%</div>
-                </article>
-                <article class="card"> 
-                    <div class="summary-header">
-                        <span class="coin-sign">☀️</span>
-                        <span>Solana <span class="ticker">SOL</span></span>
-                    </div>
-                    <div class="summary-price">$152.45</div> 
-                    <div class="summary-change text-positive">+5.8%</div>
-                </article>
-                <article class="card">
-                    <div class="summary-header"> 
-                        <span class="coin-sign">💵</span>
-                        <span>Tether <span class="ticker">USDT</span></span>
-                    </div>
-                    <div class="summary-price">$1.00</div>
-                    <div class="summary-change">+0.01%</div>
-                </article>
-            </div>
-            <!-- Quick Actions Section -->
-            <div class="quick-actions-section">
-                <div class="quick-actions-header">
-                    <h3>Quick Actions</h3>
+                <!-- Portfolio Overview -->
+                <div class="dashboard-section portfolio-overview-panel">
+                    <article class="overview-card">
+                        <span class="overview-title">Total Balance</span> 
+                        <span class="overview-value">$12,450.82</span>
+                    </article>
+                    <article class="overview-card">
+                        <span class="overview-title">24h Volume</span> 
+                        <span class="overview-value">$1,830.40</span>
+                    </article>
+                    <article class="overview-card">
+                        <span class="overview-title">Total P&L</span> 
+                        <span class="overview-value text-positive">+$782.15</span>
+                    </article>
+                    <article class="overview-card">
+                        <span class="overview-title">Open Positions</span> 
+                        <span class="overview-value">4</span>
+                    </article>
                 </div>
-                <a href="#" class="action-btn">
-                    <span>Deposit</span>
-                </a>
-                <a href="#" class="action-btn">
-                    <span>Withdraw</span> 
-                </a>
-                <a href="#" class="action-btn">
-                    <span>Swap</span> 
-                </a>
-            </div>
-            <!-- Latest News -->
-            <div class="dashboard-news-section">
-                <h3>Latest News</h3>
-                <article class="card news-card">
-                    <h4>Institutional Adoption Surges</h4>
-                    <p class="card-subtext">Major financial institutions are increasing their crypto holdings, signaling a bullish long-term outlook.</p>
-                    <a href="learn.html" class="read-more-link">Read More →</a>
-                </article>
-                <article class="card news-card">
-                    <h4>Ethereum's Dencun Upgrade</h4>
-                    <p class="card-subtext">The latest network upgrade brings significant improvements to scalability and transaction fees.</p>
-                    <a href="learn.html" class="read-more-link">Read More →</a>
-                </article>
-                <article class="card news-card">
-                    <a href="learn.html" class="btn">View All News</a>
-                </article>
-            </div>
 
-            <!-- Market Overview Table -->
-            <article class="market-overview-table">
-                <h2>Market Overview</h2>
-                <div>
+                <!-- Crypto Summary Cards -->
+                <div class="dashboard-section crypto-summary-cards">
+                    <article class="summary-card">
+                        <div class="summary-header">
+                            <span class="coin-sign">₿</span> 
+                            <span>Bitcoin <span class="ticker">BTC</span></span>
+                        </div>
+                        <div class="summary-price">$68,450.72</div>
+                        <div class="summary-change text-positive">+2.5%</div>
+                    </article>
+                    <article class="summary-card">
+                        <div class="summary-header"> 
+                            <span class="coin-sign">💎</span>
+                            <span>Ethereum <span class="ticker">ETH</span></span>
+                        </div>
+                        <div class="summary-price">$3,560.18</div>
+                        <div class="summary-change text-negative">-1.2%</div>
+                    </article>
+                    <article class="summary-card"> 
+                        <div class="summary-header">
+                            <span class="coin-sign">☀️</span>
+                            <span>Solana <span class="ticker">SOL</span></span>
+                        </div>
+                        <div class="summary-price">$152.45</div> 
+                        <div class="summary-change text-positive">+5.8%</div>
+                    </article>
+                    <article class="summary-card">
+                        <div class="summary-header"> 
+                            <span class="coin-sign">💵</span>
+                            <span>Tether <span class="ticker">USDT</span></span>
+                        </div>
+                        <div class="summary-price">$1.00</div>
+                        <div class="summary-change">+0.01%</div>
+                    </article>
+                </div>
+
+                <!-- Market Overview Table -->
+                <div class="dashboard-section market-overview-table">
+                    <h2>Market Overview</h2>
                     <table>
                         <thead>
                             <tr>
@@ -200,8 +162,9 @@
                         </tbody>
                     </table>
                 </div>
-            </article>
-        </section>
+
+            </section>
+        </div>
     </main>
 
     <footer id="main-footer"> 
