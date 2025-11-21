@@ -1169,7 +1169,7 @@ section h2 {
 /* ==========================================================================
    7. MISCELLANEOUS (Scrollbar)
    ========================================================================== */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 10px;
 }
 
@@ -1184,4 +1184,4 @@ section h2 {
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(180deg, var(--accent-cyan), var(--accent-purple));
-}
+} */
