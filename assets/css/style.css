@@ -120,8 +120,6 @@ body::after {
     text-align: center;
 }
 
-/* A standard accessibility class to hide elements visually 
-   but keep them available for screen readers. */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -327,7 +325,6 @@ body::after {
    5. PAGE-SPECIFIC STYLES
    ========================================================================== */
 
-/* 5.1 Home Page (index.html) */
 .home-page main section {
     padding: 120px 0;
 }
@@ -417,7 +414,6 @@ body::after {
     color: var(--text-secondary);
 }
 
-/* 5.2 Shared Section Styles */
 main section {
     padding: 80px 0;
 }
@@ -525,7 +521,6 @@ section h2 {
 }
 
 
-/* 5.4 Markets Page (markets.html) */
 .market-card-header {
     display: flex;
     align-items: center;
@@ -694,7 +689,6 @@ section h2 {
     color: var(--accent-blue);
 }
 
-/* 5.6 Footer */
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -759,7 +753,7 @@ section h2 {
     font-size: 0.9rem;
 }
 
-/* 5.7 Tools Page (tools.html) */
+
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -933,7 +927,7 @@ section h2 {
     gap: 0.875rem;
 }
 
-/* 5.8 Dashboard Page (dashboard.html) */
+
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -942,7 +936,7 @@ section h2 {
 }
 
 .dashboard-section {
-    grid-column: 1 / -1; /* Default to full-width */
+    grid-column: 1 / -1; 
 }
 
 .dashboard-section h2 {
@@ -975,134 +969,4 @@ section h2 {
     padding: 1.75rem;
     border-radius: var(--border-radius-lg);
     border: 1px solid var(--border-color);
-}
-
-/* ==========================================================================
-   6. MEDIA QUERIES (RESPONSIVE STYLES)
-   ========================================================================== */
-
-@media (max-width: 992px) {
-    .pricing-card.featured {
-        transform: scale(1);
-    }
-
-    .footer-sitemap {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .grid-3-col,
-    .grid-4-col {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #main-navbar .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem 1rem;
-        margin-top: 1rem;
-    }
-
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    .container {
-        padding: 0 1rem;
-    }
-
-    .grid-2-col,
-    .grid-3-col,
-    .grid-4-col {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .card {
-        padding: 1.5rem;
-    }
-    .stat-number {
-        font-size: 2.5rem;
-    }
-
-    .navbar-links a {
-        width: 100%;
-        padding: 0.5rem 0;
-    }
-
-    .hero {
-        padding: 140px 0 80px;
-        min-height: 500px;
-    }
-    .hero .tagline {
-        font-size: 1rem;
-    }
-    .cta-section-gradient {
-        padding: 3rem 0;
-    }
-    main section {
-        padding: 50px 0;
-    }
-    .home-page main section {
-        padding: 80px 0;
-    }
-    .page-header {
-        padding: 140px 0 40px;
-    }
-    section h2 {
-        margin-bottom: 2rem;
-    }
-    .faq-container summary {
-        padding: 1rem 1.25rem;
-        font-size: 1rem;
-        padding-right: 2.5rem;
-    }
-    .faq-container .accordion-content {
-        padding: 0 1.25rem 1rem;
-    }
-    .pricing-card .price {
-        font-size: 2.5rem;
-    }
-    .featured-news-card {
-        flex-direction: column;
-    }
-    .featured-news-card img {
-        width: 100%;
-    }
-    .footer-top {
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
-    }
-
-    /* Dashboard Responsive */
-    .dashboard-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio-overview-panel {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .crypto-summary-cards {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer-sitemap {
-        grid-template-columns: 1fr;
-    }
 }
