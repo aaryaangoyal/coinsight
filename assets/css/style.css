@@ -467,65 +467,6 @@ section h2 {
     text-align: center;
 }
 
-/* 5.3 Pricing Page (pricing.html) & Reusable Accordion */
-.faq-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.faq-container details {
-    background: var(--glass-bg);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius-md);
-    margin-bottom: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-.faq-container details:hover {
-    border-color: var(--accent-cyan);
-}
-
-.faq-container summary {
-    list-style: none;
-    padding: 1.25rem 1.5rem;
-    font-weight: 600;
-    font-size: 1.1rem;
-    cursor: pointer;
-    position: relative;
-    transition: color 0.3s ease;
-    user-select: none;
-}
-
-.faq-container summary::-webkit-details-marker {
-    display: none;
-}
-
-.faq-container summary::after {
-    content: '+';
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5em;
-    font-weight: 300;
-    color: var(--accent-cyan);
-    transition: transform 0.3s ease;
-}
-
-.faq-container details[open] summary::after {
-    transform: translateY(-50%) rotate(45deg);
-}
-
-.faq-container details[open] summary {
-    color: var(--accent-cyan);
-}
-
-.faq-container .accordion-content {
-    padding: 0 1.5rem 1.25rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
 .pricing-card {
     text-align: center;
     padding: 2.5rem 2rem;
